@@ -45,7 +45,7 @@ function Form({ url, id, validation }) {
       axios
         .put(`${url}/${id}`, form)
         .then((res) => {
-          console.log(res);
+          navigate('/unicorns')
         })
         .catch((error) => {
           console.log(error);
