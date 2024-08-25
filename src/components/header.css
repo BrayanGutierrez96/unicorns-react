@@ -1,0 +1,38 @@
+header{
+    padding: 30px;
+    background-color: rgba(3, 0, 15, 0.918);
+    border: 1px solid black;
+    box-shadow: 10px -10px 10px 15px rgba(0, 0, 0, 0.692);
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    opacity: 70%;
+    transition: .5s;
+}
+img{
+    width: 100%;
+}
+.link-header{
+    color: rgba(255, 255, 255, 0.856);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding: 10px;
+    transition: 0.5s;
+}
+.link-header:hover{
+    color: rgb(139, 138, 138);
+
+}
+.logo:hover{
+    opacity: 100%;
+    scale: 90%;
+}

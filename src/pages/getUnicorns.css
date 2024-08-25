@@ -1,0 +1,85 @@
+.body {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+  }
+  .main-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+  }
+  .loading{
+    width: 100px;
+    height: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  .text-loading{
+    font-family:monospace;
+    position: relative;
+    z-index: 1;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  .loading-dots {
+    display: flex;
+    font-weight: bolder;
+    gap: 0.2em; 
+    font-size: 1em; 
+  }
+  .dot {
+    animation: moveX 0.8s ease infinite ;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: 0s; 
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s; 
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s; 
+  }
+  
+  @keyframes moveX {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1; /* Desplazamiento en el eje X */
+    }
+  }
+
+  .loading::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid rgb(1, 11, 100);
+    border-right: 4px solid rgb(1, 11, 100);
+    border-top: 4px solid rgb(1, 11, 100);
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute; /* Posicionar encima */
+    animation: loading 0.8s linear infinite; /* Mantener la animación en el pseudo-elemento */
+  }
+ 
+@keyframes loading{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}

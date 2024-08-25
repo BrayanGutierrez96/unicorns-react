@@ -1,0 +1,109 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.897);
+  box-shadow: 10px 10px 25px 6px rgba(0, 0, 0, 0.705);
+  color: white;
+
+  animation: 0.5s ease show-cards;
+}
+.card-img {
+  background: url("../../public/imgNotFound.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.img-card {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  user-select: none;
+}
+
+.title-card {
+  display: flex;
+  font-size: 0.9em;
+  width: 100%;
+  justify-content: center;
+}
+.description-card {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0 50px;
+}
+.btn-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.btn-show {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  background-color: rgb(145, 144, 144);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-show-card {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  background-color: rgb(145, 144, 144);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.delete {
+  background-color: rgba(250, 89, 89, 0.856);
+  color: white;
+}
+
+.btn-show:hover {
+  scale: 105%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: white;
+}
+.btn-show-card:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.delete:hover {
+  background-color: rgba(245, 50, 50, 0.856);
+  color: black;
+}
+.btn-show:active {
+  background-color: rgba(94, 92, 92, 0.966);
+  color: white;
+}
+@keyframes show-cards {
+  from {
+    scale: 50%;
+  }
+  to {
+    scale: 100%;
+  }
+}
